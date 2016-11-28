@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context="com.example.ugurcan.readup.MainActivity">
+    tools:context="com.example.ugurcan.readup.MainActivity"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,6 +14,20 @@
         android:layout_height="wrap_content"
         android:background="@color/ColorPrimary"
         android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"/>
+        <EditText
+            android:id="@+id/SearchWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="...."
+            android:inputType="text"
+            android:background="@drawable/edit_text_style"/>
     </android.support.v7.widget.Toolbar>
 
-</RelativeLayout>
+</LinearLayout>
