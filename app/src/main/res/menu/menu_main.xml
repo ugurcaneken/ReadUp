@@ -11,7 +11,7 @@
         android:title="@string/action_search"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_share"
+        android:id="@+id/action_addFile"
         android:icon="@drawable/ic_note_add_white_48dp"
         android:orderInCategory="101"
         android:title="@string/action_share"
