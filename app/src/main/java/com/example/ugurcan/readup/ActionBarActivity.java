@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.MaterialDialog;
+
 /**
  * Created by Ugurcan on 28.11.2016.
  */
@@ -34,7 +36,13 @@ public class ActionBarActivity  extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_search) {
 
-             Toast.makeText(getApplicationContext(),searchWord.getText().toString(),Toast.LENGTH_LONG).show();
+            new MaterialDialog.Builder(this)
+                    .title("Merhaba")
+                    .content("ReadUp Projesi")
+                    .positiveText("OK")
+                    .negativeText("İPTAL")
+                    .neutralText("devamı...")
+                    .show();
             return true;
         }
         if(id==R.id.action_addFile)
